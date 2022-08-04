@@ -1,0 +1,168 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: montserrat;
+	background: royalblue;
+	height: 100vh;
+	overflow: hidden;
+
+
+}
+
+
+
+.container {
+	height:580px ;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	border-radius: 20px;
+	background: white;
+	box-shadow: -1px 9px 27px 5px rgba(0, 0, 0, 0.75);
+
+}
+ .card {
+	
+	margin: 0 auto;
+	/*padding: 50px 50px;*/
+	/*width: 100%;*/
+	
+}
+
+.img_container{
+	text-align: center;
+	margin-bottom: 15px;
+	padding: 0 0 20px 0 ;
+	border-bottom: 1px solid silver;
+}
+img {
+	border-radius: 50%;
+	width: 150px;
+	margin: 0 auto;
+}
+
+form {
+	padding: 0 40px ;
+	box-sizing: border-box;
+
+}
+form .txt_pro {
+	position: relative;
+	border-bottom: 2px solid #adadad;
+	margin: 30px 0;
+
+}
+
+.txt_pro input {
+	width: 100%;
+	padding: 0 5px;
+	height: 40px;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	background: none;
+
+}
+
+.txt_pro label {
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	color: #adadad;
+	transform: translateY(-50%);
+	font-size: 16px;
+	pointer-events: none;
+	transition: .5s;
+
+}
+.txt_pro span::before {
+	content: '';
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #2691d9;
+	transition: .5s;
+
+}
+.txt_pro input:focus ~ label ,
+.txt_pro input:valid ~ label {
+	top: -5px;
+	color: #2691d9;
+}
+
+.txt_pro input:focus ~ span ::before ,
+.txt_pro input:valid ~ span::before{
+	width: 100%;
+}
+#file {
+	display: none;
+} 
+
+/*.add_img label {
+	width: 111%;
+	height: 40px;
+	border: 1px solid;
+	border-radius: 50px;
+	background-color: orange;
+	font-size: 18px;
+	color: #fff;
+	font-weight:700;
+	padding: 10px;
+	cursor: pointer;
+	outline: none;
+	margin-top: 10px;
+}*/
+#h {
+	width: 100%;
+	height: 22px;
+	margin-top: 20px;
+	border: 1px solid;
+	border-radius: 25px;
+	background-color: orange;
+	font-size: 18px;
+	color: #fff;
+	font-weight:700;
+	padding: 10px;
+	cursor: pointer;
+	outline: none;
+	text-align: center;
+}
+
+button {
+	width: 111%;
+	height: 40px;
+	margin-top: 20px;
+	border: 1px solid;
+	border-radius: 25px;
+	background-color: orange;
+	font-size: 18px;
+	color: #fff;
+	font-weight:650;
+	padding: 10px;
+	cursor: pointer;
+	outline: none;
+
+
+}
+
+.signup_link {
+	margin: 30px 0;
+	text-align: center;
+	font-size: 16px;
+	color: #666666;
+}
+.signup_link a {
+	color: orange;
+	text-decoration: none;
+
+}
+.signup_link a:hover{
+	text-decoration: underline;
+
+}
+
+
